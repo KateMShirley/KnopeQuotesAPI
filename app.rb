@@ -17,9 +17,6 @@ end
 # @key = ENV['API_key']
 
 
-
-
-
 ##RESTful API
 #
 # def quote_id
@@ -44,15 +41,15 @@ get '/api/quotes/:id' do
 
 end
 
-#Get by category
-get '/api/quotes/:category' do
-  Quote.find(params[:category])
-end
+# #Get by category
+# get '/api/quotes/:category' do
+#   Quote.find(params[:category])
+# end
 
 ## CREATE
 post '/api/quotes' do
   request_body = JSON.parse(request.body.read.to_s)
-  QuotesModel.create(request_body).to_json
+  QuoteModel.create(request_body).to_json
 end
 
 ## update
@@ -87,3 +84,17 @@ delete '/api/quotes/:id' do
 end
 
 ## end RESTful API
+
+
+
+
+
+
+
+
+
+
+
+
+
+## backboneeeeeee ########
