@@ -11,34 +11,69 @@ get '/' do
 end
 
 ##RESTful API
-
-def quote_id
-  quote_params = {:id => params[:id]}
-end
-
-
-def quote_category
-  quote_params = {:category => params[:category]}
-end
+#
+# def quote_id
+#   quote_params = {:id => params[:id]}
+# end
+#
+#
+# def quote_category
+#   quote_params = {:category => params[:category]}
+# end
 
 ## Get (all)
 get '/api/quotes' do
-  Quote.all.to_json
+  QuoteModel.all.to_json
 end
 
 
 #Get by ID
 
 get '/api/quotes/:id' do
-  Quote.find(quote_id[:id]).to_json
+  QuoteModel.find(params[:id]).to_json
 
 end
 
 #Get by category
 get '/api/quotes/:category' do
-  Quote.find(quote_category[:category])
+  Quote.find(params[:category])
 end
 
+## CREATE
+post '/api/quotes' do
+  request_body = JSON.parse(request.body.read.to_s)
+  QuotesModel.create(request_body).to_json
+end
 
+## update
+
+put '/api/quotes/:id' do
+  request_body = JSON.parse(request.body.read.to_s)
+  @id = params[:id]
+  @quote = QuoteModel.find(@id)
+  @quote.sentence = request_body[:sentence]
+  @quote.category = request_body[:category]
+  @quote.season = request_body[:season]
+  @quote.ep = request_body[:ep]
+  @quote.save
+  @quote.to_json
+end
+
+patch '/api/quotes/:id' do
+  request_body = JSON.parse(request.body.read.to_s)
+  @id = params[:id]
+  @quote = QuoteModel.find(@id)
+  @quote.sentence = request_body[:sentence]
+  @quote.category = request_body[:category]
+  @quote.season = request_body[:season]
+  @quote.ep = request_body[:ep]
+  @quote.save
+  @quote.to_json
+end
+
+##delete
+delete '/api/quotes/:id' do
+  QuoteModel.destroy(params[:id]).to_json
+end
 
 ## end RESTful API
