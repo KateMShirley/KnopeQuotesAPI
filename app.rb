@@ -48,7 +48,7 @@ end
 
 ## CREATE
 post '/api/quotes' do
-  request_body = JSON.parse(request.body.read.to_s)
+  request_body = JSON.parse request.body.read.to_s
   QuoteModel.create(request_body).to_json
 end
 
@@ -84,17 +84,3 @@ delete '/api/quotes/:id' do
 end
 
 ## end RESTful API
-
-
-
-
-
-
-
-
-
-
-
-
-
-## backboneeeeeee ########
