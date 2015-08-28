@@ -10,6 +10,16 @@ get '/' do
   erb :index
 end
 
+
+
+## authentication###################################
+
+# @key = ENV['API_key']
+
+
+
+
+
 ##RESTful API
 #
 # def quote_id

@@ -16,7 +16,7 @@ GEM
       tzinfo (~> 1.1)
     arel (6.0.3)
     builder (3.2.2)
-    dot_env (0.0.3)
+    dotenv (2.0.2)
     i18n (0.7.0)
     json (1.8.3)
     minitest (5.8.0)
@@ -40,7 +40,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  dot_env
+  dotenv
   json
   pg
   sinatra

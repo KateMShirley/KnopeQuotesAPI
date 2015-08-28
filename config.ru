@@ -1,4 +1,6 @@
 require './app'
-require './quote'
+require './models/quoteModel'
+require 'dotenv'
+Dotenv.load
 
 run Sinatra::Application
