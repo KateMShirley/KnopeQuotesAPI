@@ -1,11 +1,12 @@
 <script type="text/template" id = 'quote-template'>
-  <p><strong>Quote: </strong> <em><%%= sentence %></em><br> Season: <%%= season %> ; Episode <%%= ep %></p>
+  <p class = "border"><strong>Quote: </strong> <em><%%= sentence %></em><br> Season: <%%= season %> ; Episode <%%= ep %></p>
 </script>
 
-<section>
-  <h5>Welcome to Love from Leslie you poetic, noble, land-mermaid. Leslie Knope is here to provide you motivational quotes for every aspect of your life. What do you need help with today? </h5>
+<div class = 'row'>
+  <p>Welcome to Love from Leslie you poetic, noble, land-mermaid. Leslie Knope is here to provide you motivational quotes for every aspect of your life. What do you need help with today? </p>
+</div>
 
-
+<div class = 'row'>
 <fieldset>
   <button type="button" class='inspo'>Inspiration</button>
   <button type="button" class='obs'>Obstacles</button>
@@ -13,9 +14,7 @@
   <button type="button" class='men'>Love</button>
   <button type="button" class='random'>EVERYTHING</button>
 </fieldset>
-
-
-
+</div>
 <section id ='quote-list'>
   <!-- <button type="submit" id = 'random'>Click for Random Quote</button> -->
   <!-- backbone will fill this out -->

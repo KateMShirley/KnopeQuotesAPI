@@ -7,6 +7,9 @@ ActiveRecord::Base.establish_connection(
 )
 
 get '/' do
+
+  @key = ENV['API_KEY']
+  puts @key
   erb :index
 end
 
@@ -14,7 +17,6 @@ end
 
 ## authentication###################################
 
-# @key = ENV['API_key']
 
 
 ##RESTful API
@@ -48,6 +50,17 @@ end
 
 ## CREATE
 post '/api/quotes' do
+  # make sure you document a required params
+  # $.params jQuery method based on {key: value}
+  @is_authorized = false;
+  if params[:api_key].nil? == false && params[:api_key] == ENV[API_KEY]
+    @is_authorized = true
+  end
+
+  if @is_authorized == false
+    return {:status => '403', :message => 'not authorized'}.to_json
+  end
+
   request_body = JSON.parse request.body.read.to_s
   QuoteModel.create(request_body).to_json
 end
