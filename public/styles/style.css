@@ -30,9 +30,9 @@ img {
   position: relative;
   /*see the support section below for more info*/
   width: 80%;
-  background: rgba(255, 255, 255, 0.7);
+  background: #fff;
   padding: 15px;
-  margin: 20px 0 40px 40px;
+  margin: -10px 0 40px 40px;
   color: #333;
   /*add the bubble outline*/
   border: 3px solid #7e527f;
@@ -45,11 +45,11 @@ img {
   content: "";
   position: absolute;
   /*see the support section below for more info*/
-  bottom: -35px;
+  top: -35px;
   /* value = -(border-top-width) - (border-bottom-width) in this case -(35px - 0px)= -35px*/
-  left: 30px;
+  left: 40px;
   /*horizontal position of the triangle*/
-  border-width: 35px 35px 0 35px;
+  border-width: 0 35px 35px 35px;
   /*size of the traingle*/
   border-style: solid;
   border-color: #7e527f transparent;
@@ -60,11 +60,11 @@ img {
   content: "";
   position: absolute;
   /*see the support section below for more info*/
-  bottom: -30px;
+  top: -30px;
   /* value = -(border-top-width - border-bottom-width) */
-  left: 35px;
+  left: 45px;
   /* value = (:before left) + (:before border-left) - (:after border-left) */
-  border-width: 30px 30px 0 30px;
+  border-width: 0 30px 30px 30px;
   border-style: solid;
   border-color: #fff transparent;
   /*colour should be the same as the container background*/
@@ -88,11 +88,14 @@ fieldset {
 
 .quote {
   font-family: 'Bowlby One', cursive;
-  font-size: 2.2rem; }
+  font-size: 2rem; }
 
 .episode {
   font-weight: bold;
   font-size: 1.5rem; }
+
+.description {
+  margin-top: -15%; }
 
 a.twitter-share-button,
 a.twitter-mention-button,
