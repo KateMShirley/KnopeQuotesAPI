@@ -120,4 +120,9 @@ $(document).ready(function(event) {
     $('.men').on('click', function() {
       active.collectionView.renderRandoMen();
     })
+
+    $('.leslie').fadeOut("fast",function() {
+      console.log('leslie is here');
+      $('.leslie').fadeIn("slow");
+    });
 });
