@@ -48,7 +48,9 @@ Finally, when styling I started with Skeleton to give my site a grid and a basel
 * SCREENSHOT OF PAGE WILL GO HERE (I RAN OUT OF TIME TO FIX STYLING AND SCREEN SHOT ON TUESDAY MORNING BECAUSE GIT IS THE WORST)
 
 ##Leslie Knope Quotes 2.0
+The biggest problems I encountered with Knope Quotes 1.0 was getting the app on Digital Ocean and styling the site. I solved the Digital Ocean problem by running a script created by James Traver. For the styling, I underestimated just how difficult it is to make an intuitive app. Even though the scope of the project is small and there is not much content, I spend much more time on styling than I anticipated.
 
+In the next version I would like to use more animations between rendering the data, use Twitter's Javascript helpers to pre-fill the tweet button with the quote, and perhaps add some sort of user-suggested quotes. 
 
 ---
 ###Backbone Application Assignment
@@ -63,7 +65,7 @@ Your app must:
 * **Craft thoughtful user stories** to explain your API.
 * **Manage your source code** using a standard Git flow on Github.
 * Layout and style your front-end with **clean & well-formatted CSS and make it Responsive**. Bootstrap, Skeleton, Foundation, and other front-end CSS frameworks are all welcome here!
-* **Deploy your application online** so it's publically accessible. For Sinatra, use Digital Ocean. For Rails, use Heroku.
+* **Deploy your application online** so it's publicly accessible. For Sinatra, use Digital Ocean. For Rails, use Heroku.
 
 
 
