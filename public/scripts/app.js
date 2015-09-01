@@ -120,4 +120,7 @@ $(document).ready(function(event) {
     $('.men').on('click', function() {
       active.collectionView.renderRandoMen();
     })
+
+    $('.leslie').fadeIn("fast",function() {
+    });
 });
