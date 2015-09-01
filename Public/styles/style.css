@@ -26,6 +26,9 @@ img {
   margin-top: -2.5%;
   margin-right: -10%; }
 
+.leslie {
+  display: none; }
+
 .border {
   position: relative;
   /*see the support section below for more info*/

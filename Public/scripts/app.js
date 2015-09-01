@@ -121,8 +121,6 @@ $(document).ready(function(event) {
       active.collectionView.renderRandoMen();
     })
 
-    $('.leslie').fadeOut("fast",function() {
-      console.log('leslie is here');
-      $('.leslie').fadeIn("slow");
+    $('.leslie').fadein("fast",function() {
     });
 });
