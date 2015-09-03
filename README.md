@@ -28,15 +28,17 @@ Finally, when styling I started with Skeleton to give my site a grid and a basel
 
 * Google Fonts used on this website: Bowlby One, Oleo Script Swash Caps
 
-##Inallation instructions:
+##Insallation instructions:
 * Fork from: https://github.com/KateMShirley/KnopeQuotesAPI
 * Include the following gems in Gemfile:
 1. gem 'sinatra'
 2. gem 'pg'
 3. gem 'json'
-4.  gem 'sinatra-activerecord'
-5.  gem 'dotenv'
+4. gem 'sinatra-activerecord'
+5. gem 'dotenv'
 * Bundle in terminal
+* Open postgresql
+* Run script from migrations.sql file in postgresql
 * Include the following libraries from CDN:
 1. Backbone.js
 2. Underscore.js
@@ -50,7 +52,7 @@ Finally, when styling I started with Skeleton to give my site a grid and a basel
 ##Leslie Knope Quotes 2.0
 The biggest problems I encountered with Knope Quotes 1.0 was getting the app on Digital Ocean and styling the site. I solved the Digital Ocean problem by running a script created by James Traver. For the styling, I underestimated just how difficult it is to make an intuitive app. Even though the scope of the project is small and there is not much content, I spend much more time on styling than I anticipated.
 
-In the next version I would like to use more animations between rendering the data, use Twitter's Javascript helpers to pre-fill the tweet button with the quote, and perhaps add some sort of user-suggested quotes. 
+In the next version I would like to use more animations between rendering the data, use Twitter's Javascript helpers to pre-fill the tweet button with the quote, and perhaps add some sort of user-suggested quotes or voting capability.
 
 ---
 ###Backbone Application Assignment

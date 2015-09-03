@@ -70,6 +70,17 @@ img {
   /*colour should be the same as the container background*/
   display: block; }
 
+.quote {
+  font-family: 'Bowlby One', cursive;
+  font-size: 2rem; }
+
+@media (max-width: 550px) {
+  .border {
+    margin-top: 4%;
+    margin-left: -2%; }
+
+  .quote {
+    font-size: 1.5rem; } }
 .main {
   background-color: rgba(255, 255, 255, 0.7);
   padding: 2%;
@@ -80,15 +91,12 @@ img {
 
 button {
   font-family: 'Bowlby One', cursive;
-  font-size: 1.8rem; }
+  font-size: 1.8rem;
+  margin-left: 5%; }
 
 fieldset {
   display: block;
   margin: 0 auto; }
-
-.quote {
-  font-family: 'Bowlby One', cursive;
-  font-size: 2rem; }
 
 .episode {
   font-weight: bold;
