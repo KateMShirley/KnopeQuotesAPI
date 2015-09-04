@@ -18,13 +18,49 @@ h5 {
   margin-bottom: -1%; }
 
 h6 {
-  font-size: 1.8rem; }
+  font-size: 1.8rem;
+  font-weight: bold; }
 
 img {
   max-width: 250px;
   min-height: 250px;
   margin-top: -2.5%;
   margin-right: -10%; }
+
+.main {
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 2%;
+  border-radius: 5px; }
+
+.placeholder {
+  color: transparent; }
+
+.quote {
+  font-size: 2rem;
+  font-weight: bold;
+  font-style: italic; }
+
+.episode {
+  font-weight: bold;
+  font-size: 1.5rem; }
+
+.description {
+  margin-top: -15%; }
+
+button {
+  font-family: 'Bowlby One', cursive;
+  font-size: 1.8rem;
+  margin: 0 auto; }
+
+.btnrow1 {
+  display: block;
+  margin: 0 auto;
+  margin-left: 13%; }
+
+.btnrow2 {
+  display: block;
+  margin: 0 auto;
+  margin-left: 25%; }
 
 .border {
   position: relative;
@@ -70,41 +106,28 @@ img {
   /*colour should be the same as the container background*/
   display: block; }
 
-.quote {
-  font-family: 'Bowlby One', cursive;
-  font-size: 2rem; }
-
 @media (max-width: 550px) {
   .border {
     margin-top: 4%;
     margin-left: -2%; }
 
   .quote {
-    font-size: 1.5rem; } }
-.main {
-  background-color: rgba(255, 255, 255, 0.7);
-  padding: 2%;
-  border-radius: 5px; }
+    font-size: 1.5rem; }
 
-.placeholder {
-  color: transparent; }
+  button {
+    display: inline;
+    margin-bottom: 2%; }
 
-button {
-  font-family: 'Bowlby One', cursive;
-  font-size: 1.8rem;
-  margin-left: 5%; }
+  .btnrow1 {
+    display: inline;
+    margin-left: 0; }
 
-fieldset {
-  display: block;
-  margin: 0 auto; }
+  .btnrow2 {
+    display: inline;
+    margin-left: 0; }
 
-.episode {
-  font-weight: bold;
-  font-size: 1.5rem; }
-
-.description {
-  margin-top: -15%; }
-
+  .bottom {
+    margin-top: -5%; } }
 a.twitter-share-button,
 a.twitter-mention-button,
 a.twitter-hashtag-button {

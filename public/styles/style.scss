@@ -1,3 +1,5 @@
+/////////// MAIN DESKTOP STYLING////////////
+
 body {
   background-image: url("../images/urban-park-vector.jpg");
   background-repeat: no-repeat;
@@ -22,6 +24,7 @@ h5 {
 
 h6{
   font-size: 1.8rem;
+  font-weight: bold;
 }
 
 img {
@@ -31,6 +34,60 @@ img {
   margin-right: -10%;
 }
 
+/////STYLING SKELETON COLUMNS
+
+.main {
+  background-color: rgba(255, 255, 255, .7);
+  padding: 2%;
+  // border: 2px solid black;
+  border-radius: 5px;
+}
+
+.placeholder {
+  color: rgba(0,0,0,0);
+}
+
+////// QUOTE BUBBLE TEXT////////
+
+.quote {
+  // font-family: 'Bowlby One', cursive;
+  // font-family: 'Oleo Script Swash Caps', cursive;
+  font-size: 2rem;
+  font-weight: bold;
+  font-style: italic;
+}
+.episode {
+  // font-family: 'Bowlby One', cursive;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.description {
+  margin-top: -15%;
+}
+
+
+////// BUTTON MENU//////////
+
+button {
+  font-family: 'Bowlby One', cursive;
+  font-size: 1.8rem;
+  margin: 0 auto;
+}
+
+.btnrow1 {
+  display: block;
+  margin: 0 auto;
+  margin-left:13%;
+}
+.btnrow2 {
+  display: block;
+  margin: 0 auto;
+  margin-left: 25%;
+
+}
+
+//////// QUOTE BUBBLE CSS TRANSFORMATIONS  //////////
 
 .border {
   position: relative;
@@ -76,11 +133,8 @@ img {
   /*colour should be the same as the container background*/
   display: block; }
 
-.quote {
-  font-family: 'Bowlby One', cursive;
-  // font-family: 'Oleo Script Swash Caps', cursive;
-  font-size: 2rem;
-}
+
+/////////MOBILE RESPONSIVE///////
 
 @media (max-width: 550px) {
   .border {
@@ -90,43 +144,23 @@ img {
   .quote {
     font-size: 1.5rem;
   }
+  button {
+    display: inline;
+    margin-bottom: 2%;
+  }
+  .btnrow1{
+    display: inline;
+    margin-left: 0;
+  }
+  .btnrow2 {
+    display: inline;
+    margin-left: 0;
+  }
+  .bottom {
+    margin-top: -5%;
+  }
 }
-
-.main {
-  background-color: rgba(255, 255, 255, .7);
-  padding: 2%;
-  // border: 2px solid black;
-  border-radius: 5px;
-}
-
-.placeholder {
-  color: rgba(0,0,0,0);
-
-}
-
-button {
-  font-family: 'Bowlby One', cursive;
-  font-size: 1.8rem;
-  margin-left: 5%;
-}
-
-fieldset {
-  display: block;
-  margin: 0 auto;
-}
-
-
-
-.episode {
-  // font-family: 'Bowlby One', cursive;
-  font-weight: bold;
-  font-size: 1.5rem;
-}
-
-.description {
-  margin-top: -15%;
-}
-// Twitter CSS
+/////////// Twitter CSS
 
 a.twitter-share-button,
 a.twitter-mention-button,

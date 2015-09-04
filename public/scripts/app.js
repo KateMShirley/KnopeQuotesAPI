@@ -98,6 +98,8 @@ quotes.collectionView = Backbone.View.extend({
 
 // end blueprints
 
+//Manipulate the DOM
+
 $(document).ready(function(event) {
     //instantiate collection + collectionView
     active.collection = new quotes.collection();
@@ -120,7 +122,7 @@ $(document).ready(function(event) {
     $('.men').on('click', function() {
       active.collectionView.renderRandoMen();
     })
-    $('.leslie').fadeIn("fast",function() {
-    });
+    // $('.leslie').fadeIn("fast",function() {
+    // });
 
 });

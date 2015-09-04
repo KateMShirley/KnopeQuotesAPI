@@ -1,28 +1,41 @@
+<!-- UNDERSCORE TEMPLATE FOR QUOTES -->
 <script type="text/template" id = 'quote-template'>
   <p class = "border"> <span class='quote'>"<%%= sentence %>"</span>
-    <br><span class='episode'> Season <%%= season %>, Episode <%%= ep %>     </span>
+    <br><span class='episode'> Season <%%= season %>, Episode <%%= ep %></span>
+<!--TWEET BUTTON  -->
     <a href="https://twitter.com/share" class="twitter-share-button" data-count="none">Tweet</a>
-    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs'); </script>
 </script>
+<!-- SITE INTRO PARAGRAPH -->
 <br>
-<div class = 'main description'>
-<div class = 'row'>
-  <div class = 'four columns placeholder'>BLAH</div>
-  <div class = 'eight columns intro'>
-  <h6>Welcome to Love from Leslie you poetic, noble, land-mermaid. Leslie Knope is here to provide you motivational quotes for every aspect of your life. What do you need help with today? </h6>
-</div>
-</div>
-<div class='row'>
-<div id ='quote-list'>
+  <div class = 'main description'>
+    <div class = 'row'>
+      <div class = 'four columns placeholder'>BLAH
+      </div>
+      <div class = 'eight columns intro'>
+        <h6>Welcome to Love from Leslie you poetic, noble, land-mermaid. Leslie Knope is here to provide you motivational quotes for every aspect of your life. What do you need help with today? </h6>
+      </div>
+    </div>
+    <div class='row'>
+
+      <div id ='quote-list'>
   <!-- <button type="submit" id = 'random'>Click for Random Quote</button> -->
   <!-- backbone will fill this out -->
-</div>
-</div>
+      </div>
+    </div>
 
-<fieldset>
-  <button type="button" class='inspo button-primary'>Inspiration</button>
-  <button type="button" class='obs button-primary'>Obstacles</button>
-  <button type="button" class='gurl button-primary'>Girl Power</button>
-  <button type="button" class='men button-primary'>Love</button>
-  <button type="button" class='random button-primary'>EVERYTHING</button>
-</fieldset>
+<!-- BUTTON MENU -->
+
+<div class = 'row btnrow1'>
+  <fieldset>
+    <button type="button" class='inspo button-primary'>Inspiration</button>
+    <button type="button" class='obs button-primary'>Obstacles</button>
+    <button type="button" class='gurl button-primary'>Girl Power</button>
+  </fieldset>
+</div>
+<div class = 'row btnrow2'>
+  <fieldset class='bottom'>
+    <button type="button" class='men button-primary'>Love</button>
+    <button type="button" class='random button-primary'>EVERYTHING</button>
+  </fieldset>
+</div>
