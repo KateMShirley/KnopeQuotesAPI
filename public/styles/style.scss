@@ -117,25 +117,15 @@ button {
   display: block;
   margin-bottom: 5%;
 }
-//
-// .border:after {
-//   content: "";
-//   position: absolute;
-//   /*see the support section below for more info*/
-//   top: -30px;
-//   /* value = -(border-top-width - border-bottom-width) */
-//   left: 45px;
-//   /* value = (:before left) + (:before border-left) - (:after border-left) */
-//   border-width: 0 30px 30px 30px;
-//   border-style: solid;
-//   border-color: rgba(225, 245, 246, .5);
-//   /*colour should be the same as the container background*/
-//   display: block; }
 
 
 /////////MOBILE RESPONSIVE///////
 
 @media (max-width: 550px) {
+  .description {
+    margin-top: -5%;
+    border-left: 10px solid rgba(255,255,255,.7);
+  }
   .border {
     margin-top: 4%;
     margin-left: -2%;

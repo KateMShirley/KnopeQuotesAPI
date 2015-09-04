@@ -14,21 +14,7 @@ get '/' do
 end
 
 
-
-## authentication###################################
-
-
-
 ##RESTful API
-#
-# def quote_id
-#   quote_params = {:id => params[:id]}
-# end
-#
-#
-# def quote_category
-#   quote_params = {:category => params[:category]}
-# end
 
 ## Get (all)
 get '/api/quotes' do
@@ -40,32 +26,30 @@ end
 
 get '/api/quotes/:id' do
   QuoteModel.find(params[:id]).to_json
-
 end
-
-# #Get by category
-# get '/api/quotes/:category' do
-#   Quote.find(params[:category])
-# end
 
 ## CREATE
 post '/api/quotes' do
+
+  ##AUTHENTICATION NOT YET IMPLETEMENTED FULLY...NEED JQUERY OBJECT###
   # make sure you document a required params
   # $.params jQuery method based on {key: value}
-  @is_authorized = false;
-  if params[:api_key].nil? == false && params[:api_key] == ENV[API_KEY]
-    @is_authorized = true
-  end
+        @is_authorized = false;
+        if params[:api_key].nil? == false && params[:api_key] == ENV[API_KEY]
+          @is_authorized = true
+        end
 
-  if @is_authorized == false
-    return {:status => '403', :message => 'not authorized'}.to_json
-  end
+        if @is_authorized == false
+          return {:status => '403', :message => 'not authorized'}.to_json
+        end
+
+  ###END AUTH TESTING
 
   request_body = JSON.parse request.body.read.to_s
   QuoteModel.create(request_body).to_json
 end
 
-## update
+## UPDATE
 
 put '/api/quotes/:id' do
   request_body = JSON.parse(request.body.read.to_s)

@@ -94,6 +94,10 @@ button {
   margin-bottom: 5%; }
 
 @media (max-width: 550px) {
+  .description {
+    margin-top: -5%;
+    border-left: 10px solid rgba(255, 255, 255, 0.7); }
+
   .border {
     margin-top: 4%;
     margin-left: -2%; }
