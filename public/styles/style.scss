@@ -1,4 +1,4 @@
-/////////// MAIN DESKTOP STYLING////////////
+/////////// FOUNDATION ////////////
 
 body {
   background-image: url("../images/urban-park-vector.jpg");
@@ -24,14 +24,15 @@ h5 {
 
 h6{
   font-size: 1.8rem;
-  font-weight: bold;
 }
 
 img {
-  max-width: 250px;
+  max-width: 260px;
   min-height: 250px;
   margin-top: -2.5%;
-  margin-right: -10%;
+}
+.intro {
+  margin-bottom: 3%;
 }
 
 /////STYLING SKELETON COLUMNS
@@ -39,7 +40,6 @@ img {
 .main {
   background-color: rgba(255, 255, 255, .7);
   padding: 2%;
-  // border: 2px solid black;
   border-radius: 5px;
 }
 
@@ -50,15 +50,12 @@ img {
 ////// QUOTE BUBBLE TEXT////////
 
 .quote {
-  // font-family: 'Bowlby One', cursive;
-  // font-family: 'Oleo Script Swash Caps', cursive;
   font-size: 2rem;
-  font-weight: bold;
-  font-style: italic;
+  font-weight: 900;
+
 }
 .episode {
-  // font-family: 'Bowlby One', cursive;
-  font-weight: bold;
+  font-family: 'Bowlby One', cursive;
   font-size: 1.5rem;
 }
 
@@ -93,12 +90,12 @@ button {
   position: relative;
   /*see the support section below for more info*/
   width: 80%;
-  background: #fff;
+  background: rgba(225, 245, 246, .5);
   padding: 15px;
   margin: -10px 0 40px 40px;
   color: #333;
   /*add the bubble outline*/
-  border: 3px solid #7e527f;
+  border: 3px solid #33C3F0;
   /*give the bubble curved corners*/
   -webkit-border-radius: 15px;
   -moz-border-radius: 15px;
@@ -110,28 +107,30 @@ button {
   /*see the support section below for more info*/
   top: -35px;
   /* value = -(border-top-width) - (border-bottom-width) in this case -(35px - 0px)= -35px*/
-  left: 40px;
+  left: 125px;
   /*horizontal position of the triangle*/
   border-width: 0 35px 35px 35px;
   /*size of the traingle*/
   border-style: solid;
-  border-color: #7e527f transparent;
+  border-color: #33C3F0 transparent;
   /*colour should be the same as bubble border set above*/
-  display: block; }
-
-.border:after {
-  content: "";
-  position: absolute;
-  /*see the support section below for more info*/
-  top: -30px;
-  /* value = -(border-top-width - border-bottom-width) */
-  left: 45px;
-  /* value = (:before left) + (:before border-left) - (:after border-left) */
-  border-width: 0 30px 30px 30px;
-  border-style: solid;
-  border-color: #fff transparent;
-  /*colour should be the same as the container background*/
-  display: block; }
+  display: block;
+  margin-bottom: 5%;
+}
+//
+// .border:after {
+//   content: "";
+//   position: absolute;
+//   /*see the support section below for more info*/
+//   top: -30px;
+//   /* value = -(border-top-width - border-bottom-width) */
+//   left: 45px;
+//   /* value = (:before left) + (:before border-left) - (:after border-left) */
+//   border-width: 0 30px 30px 30px;
+//   border-style: solid;
+//   border-color: rgba(225, 245, 246, .5);
+//   /*colour should be the same as the container background*/
+//   display: block; }
 
 
 /////////MOBILE RESPONSIVE///////
@@ -143,6 +142,9 @@ button {
   }
   .quote {
     font-size: 1.5rem;
+  }
+  .episode{
+    font-size: 1.3rem;
   }
   button {
     display: inline;
