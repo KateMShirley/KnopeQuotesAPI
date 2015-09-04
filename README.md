@@ -47,12 +47,27 @@ Finally, when styling I started with Skeleton to give my site a grid and a basel
 
 ##Screenshots:  
 
-* SCREENSHOT OF PAGE WILL GO HERE (I RAN OUT OF TIME TO FIX STYLING AND SCREEN SHOT ON TUESDAY MORNING BECAUSE GIT IS THE WORST)
+* Desktop Welcome View:
+
+* ![Desktop Welcome View](public/images/ScreenshotDesktopPlain.png)
+
+* Desktop View with Quote:
+
+* ![Desktop Quote View](public/images/ScreenshotDesktopQuote.png)
+
+* Mobile Welcome View:
+
+* ![Mobile Welcome View](public/images/ScreenshotMobilePlain.png)
+
+* Mobile Quote View:
+
+* ![Mobile Quote View](public/images/ScreenshotMobileQuote.png)
+
 
 ##Leslie Knope Quotes 2.0
-The biggest problems I encountered with Knope Quotes 1.0 was getting the app on Digital Ocean and styling the site. I solved the Digital Ocean problem by running a script created by James Traver. For the styling, I underestimated just how difficult it is to make an intuitive app. Even though the scope of the project is small and there is not much content, I spend much more time on styling than I anticipated.
+The biggest problems I encountered with Knope Quotes 1.0 was getting the app on Digital Ocean and styling the site. I solved the Digital Ocean problem by running a script created by James Traver. For the styling, I underestimated just how difficult it is to make an intuitive app. Even though the scope of the project is small and there is not much content, I spent much more time on styling than I anticipated.
 
-In the next version I would like to use more animations between rendering the data, use Twitter's Javascript helpers to pre-fill the tweet button with the quote, and perhaps add some sort of user-suggested quotes or voting capability.
+In the next version I would like to use more animations between rendering the data, use Twitter's Javascript helpers to pre-fill the tweet button with the quote, and perhaps add some sort of user-suggested quotes or voting capability. Right now it is only designs for desktop and mobile, and I would like to add in a tablet size as well. Finally, I need to fully implement authentication.
 
 ---
 ###Backbone Application Assignment
